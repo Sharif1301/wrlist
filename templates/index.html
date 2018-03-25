@@ -1,0 +1,19 @@
+<!--<!DOCTYPE html>
+<html>
+<head>
+	<title>Home page</title>
+</head>
+<body>
+	<h1>Headline</h1>
+	<p>My name is {{name}}</p>
+	<p>Home district is {{district}}</p>-->
+	{% extends 'base.html' %}
+		{% block content %}
+			{% for post in all_post_list %}
+				<h3>{{ post.title }}</h3>
+				<hr>
+				<p>{{ post.description }}</p>
+			{% endfor %}
+		{{% endblock %}}
+<!--</body>
+</html>-->
